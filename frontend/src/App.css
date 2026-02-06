@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f2f2f2;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  color: #111;
+  justify-content: center;
+}
+
+/* Layout */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  width: 420px;
+  padding: 28px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+}
+
+/* Heading */
+.card h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Form */
+.form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  flex: 1;
+  padding: 11px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #cfcfcf;
+  background: #000;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #000;
+}
+
+/* Buttons */
+.form button {
+  padding: 11px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #000;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.cancel-btn {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+.cancel-btn:hover {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+/* List */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+}
+
+.list-item span {
+  font-size: 14px;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.edit-btn,
+.delete-btn {
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Empty State */
+.empty {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 15px;
+}
